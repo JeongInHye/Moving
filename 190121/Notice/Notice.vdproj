@@ -68,6 +68,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.6.1"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.6.1 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.6.1"
+                    }
+                }
             }
         }
         "Release"
@@ -261,7 +269,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Notice"
         "ProductCode" = "8:{34E4D1EA-191D-4D7D-B032-5AB92569A8AA}"
-        "PackageCode" = "8:{DF75D438-FB2A-448B-9872-F873304633D0}"
+        "PackageCode" = "8:{EE4F6A00-4BF7-4CC2-BF2D-88A145F412FB}"
         "UpgradeCode" = "8:{F27CEA75-55A2-4E71-AD2E-AE59D3C60988}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -383,7 +391,7 @@
         {
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_E3AFCBF15E354140B9235CE666CDD156"
             {
-            "Name" = "8:운영서버"
+            "Name" = "8:개발서버"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
