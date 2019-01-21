@@ -1,6 +1,10 @@
 ﻿using MySql.Data.MySqlClient;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -12,26 +16,35 @@ namespace WebAPI.Modules
 
         public MYsql()
         {
-            this.conn = GetConnection();
+            conn = GetConnection();
         }
 
-        private MySqlConnection GetConnection()
+        public MySqlConnection GetConnection()
         {
-            string host = "192.168.3.133";
-            string user = "root";
-            string pwd = "1234";
-            string db = "test";
-
-            string connStr = string.Format(@"server={0};user={1};password={2};database={3}", host, user, pwd, db);
-            MySqlConnection conn = new MySqlConnection(connStr);
-
             try
             {
+                MySqlConnection conn = new MySqlConnection();
+
+                string path = "/public/DBInfo.json";
+                StreamReader sr = new StreamReader(path);
+                string result = sr.ReadToEnd();
+
+                JObject j = JsonConvert.DeserializeObject<JObject>(result);
+                Hashtable hashtable = new Hashtable();
+                foreach (JProperty col in j.Properties())
+                {
+                    hashtable.Add(col.Name, col.Value);
+                }
+
+                string strConnection1 = string.Format("server={0};user={1};password={2};database={3}", hashtable["server"], hashtable["user"], hashtable["password"], hashtable["database"]);
+
+                conn.ConnectionString = strConnection1;
                 conn.Open();
                 return conn;
             }
-            catch
+            catch (MySqlException e)
             {
+                Console.WriteLine(e.Message);
                 return null;
             }
         }

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ClassLibrary;
 using Microsoft.AspNetCore.Mvc;
 using MySql.Data.MySqlClient;
+using WebAPI.Modules;
 
 namespace WebAPI.Controllers
 {
@@ -16,7 +16,7 @@ namespace WebAPI.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            DataBase dataBase = new DataBase();
+            MYsql dataBase = new MYsql();
             MySqlConnection conn = dataBase.GetConnection();
             if (conn == null)
             {
