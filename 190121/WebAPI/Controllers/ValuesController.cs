@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ClassLibrary;
 using Microsoft.AspNetCore.Mvc;
+using MySql.Data.MySqlClient;
 
 namespace WebAPI.Controllers
 {
@@ -14,6 +16,16 @@ namespace WebAPI.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            DataBase dataBase = new DataBase();
+            MySqlConnection conn = dataBase.GetConnection();
+            if (conn == null)
+            {
+                Console.WriteLine("접속 오류");
+            }
+            else
+            {
+                Console.WriteLine("접속 성공");
+            }
             return new string[] { "value1", "value2" };
         }
 
