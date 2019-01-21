@@ -15,32 +15,32 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_71DFFBCD31BE4C1D8D616BBD42EB5A07"
+        "MsmKey" = "8:_0B678A48848C488DA988587F1862708F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_A63F241BE8CF0A82B23CD25F957803B4"
-        "OwnerKey" = "8:_F5B1065F5701444C80D53A87FD5B0E7D"
+        "OwnerKey" = "8:_0B678A48848C488DA988587F1862708F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_F5B1065F5701444C80D53A87FD5B0E7D"
+        "MsmKey" = "8:_FF8F8273993A4A0D9B4DD9BA4B34C4F5"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F5B1065F5701444C80D53A87FD5B0E7D"
+        "OwnerKey" = "8:_A63F241BE8CF0A82B23CD25F957803B4"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A63F241BE8CF0A82B23CD25F957803B4"
+        "OwnerKey" = "8:_0B678A48848C488DA988587F1862708F"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -106,10 +106,21 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_71DFFBCD31BE4C1D8D616BBD42EB5A07"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0B678A48848C488DA988587F1862708F"
             {
-            "SourcePath" = "8:..\\WindowsForms\\bin\\Debug\\WindowsForms.exe.config"
-            "TargetName" = "8:WindowsForms.exe.config"
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:WindowsForms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_0B678A48848C488DA988587F1862708F"
+                    {
+                    "Name" = "8:WindowsForms.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\WindowsForms\\bin\\Debug\\WindowsForms.exe"
+            "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_C9335785973A469CAFF067105A88DDA1"
             "Condition" = "8:"
@@ -157,21 +168,10 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F5B1065F5701444C80D53A87FD5B0E7D"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FF8F8273993A4A0D9B4DD9BA4B34C4F5"
             {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:WindowsForms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_F5B1065F5701444C80D53A87FD5B0E7D"
-                    {
-                    "Name" = "8:WindowsForms.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\WindowsForms\\bin\\Debug\\WindowsForms.exe"
-            "TargetName" = "8:"
+            "SourcePath" = "8:..\\WindowsForms\\bin\\Debug\\WindowsForms.exe.config"
+            "TargetName" = "8:WindowsForms.exe.config"
             "Tag" = "8:"
             "Folder" = "8:_C9335785973A469CAFF067105A88DDA1"
             "Condition" = "8:"
@@ -245,7 +245,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Notice"
         "ProductCode" = "8:{34E4D1EA-191D-4D7D-B032-5AB92569A8AA}"
-        "PackageCode" = "8:{DADCCCE5-FE81-491D-BE6A-74B04438FCBD}"
+        "PackageCode" = "8:{DF75D438-FB2A-448B-9872-F873304633D0}"
         "UpgradeCode" = "8:{F27CEA75-55A2-4E71-AD2E-AE59D3C60988}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -365,7 +365,7 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_C17E5B95AD0B4A8A93AF71A508E9C464"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_C37C123312AD43FD9A56737F43685C0C"
             {
             "Name" = "8:Notice"
             "Arguments" = "8:"
@@ -373,7 +373,7 @@
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_F5B1065F5701444C80D53A87FD5B0E7D"
+            "Target" = "8:_0B678A48848C488DA988587F1862708F"
             "Folder" = "8:_21BD73C9F132443AA953C48BE9B5492C"
             "WorkingFolder" = "8:_C9335785973A469CAFF067105A88DDA1"
             "Icon" = "8:"
