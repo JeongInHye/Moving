@@ -15,19 +15,19 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_0B678A48848C488DA988587F1862708F"
+        "MsmKey" = "8:_A63F241BE8CF0A82B23CD25F957803B4"
+        "OwnerKey" = "8:_F2785F4F467E4F0CBAFD8CD6B15B0798"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D5CC1DAC34904823B1ADAAE0A57D41C8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_A63F241BE8CF0A82B23CD25F957803B4"
-        "OwnerKey" = "8:_0B678A48848C488DA988587F1862708F"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_FF8F8273993A4A0D9B4DD9BA4B34C4F5"
+        "MsmKey" = "8:_F2785F4F467E4F0CBAFD8CD6B15B0798"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -40,7 +40,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_0B678A48848C488DA988587F1862708F"
+        "OwnerKey" = "8:_F2785F4F467E4F0CBAFD8CD6B15B0798"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -61,6 +61,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -77,6 +85,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -106,37 +122,6 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_0B678A48848C488DA988587F1862708F"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:WindowsForms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_0B678A48848C488DA988587F1862708F"
-                    {
-                    "Name" = "8:WindowsForms.exe"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:..\\WindowsForms\\bin\\Debug\\WindowsForms.exe"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_C9335785973A469CAFF067105A88DDA1"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A63F241BE8CF0A82B23CD25F957803B4"
             {
             "AssemblyRegister" = "3:1"
@@ -168,10 +153,41 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FF8F8273993A4A0D9B4DD9BA4B34C4F5"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_D5CC1DAC34904823B1ADAAE0A57D41C8"
             {
             "SourcePath" = "8:..\\WindowsForms\\bin\\Debug\\WindowsForms.exe.config"
             "TargetName" = "8:WindowsForms.exe.config"
+            "Tag" = "8:"
+            "Folder" = "8:_C9335785973A469CAFF067105A88DDA1"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F2785F4F467E4F0CBAFD8CD6B15B0798"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:WindowsForms, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_F2785F4F467E4F0CBAFD8CD6B15B0798"
+                    {
+                    "Name" = "8:WindowsForms.exe"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:..\\WindowsForms\\bin\\Debug\\WindowsForms.exe"
+            "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_C9335785973A469CAFF067105A88DDA1"
             "Condition" = "8:"
@@ -365,15 +381,15 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_C37C123312AD43FD9A56737F43685C0C"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_E3AFCBF15E354140B9235CE666CDD156"
             {
-            "Name" = "8:Notice"
+            "Name" = "8:운영서버"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_0B678A48848C488DA988587F1862708F"
+            "Target" = "8:_F2785F4F467E4F0CBAFD8CD6B15B0798"
             "Folder" = "8:_21BD73C9F132443AA953C48BE9B5492C"
             "WorkingFolder" = "8:_C9335785973A469CAFF067105A88DDA1"
             "Icon" = "8:"
