@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsForms.Modules;
 
 namespace WindowsForms
 {
@@ -15,6 +16,8 @@ namespace WindowsForms
         public Form1()
         {
             InitializeComponent();
+            Load load = new Load(this);
+            Load += load.GetHandler("main");
         }
     }
 }
