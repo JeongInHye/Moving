@@ -16,16 +16,6 @@ namespace WebAPI.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            MYsql dataBase = new MYsql();
-            MySqlConnection conn = dataBase.GetConnection();
-            if (conn == null)
-            {
-                Console.WriteLine("접속 오류");
-            }
-            else
-            {
-                Console.WriteLine("접속 성공");
-            }
             return new string[] { "value1", "value2" };
         }
 
