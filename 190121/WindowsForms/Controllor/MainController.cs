@@ -187,7 +187,7 @@ namespace WindowsForms.Controllor
             client.Headers.Add("user-agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.0.3705;)"); // 웹 페이지라는것을 알려줌
             client.Encoding = Encoding.UTF8;    // 한글 설정
 
-            string url = "http://192.168.3.131/api/Select";
+            string url = "http://192.168.3.132/api/Select";
 
             Stream result = client.OpenRead(url);
 
