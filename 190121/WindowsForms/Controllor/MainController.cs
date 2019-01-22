@@ -187,20 +187,7 @@ namespace WindowsForms.Controllor
             client.Headers.Add("user-agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.0.3705;)"); // 웹 페이지라는것을 알려줌
             client.Encoding = Encoding.UTF8;    // 한글 설정
 
-
-            string path = "/public/ServerInfo.json";
-            StreamReader sr1 = new StreamReader(path);
-            string result1 = sr1.ReadToEnd();
-
-            JObject j = JsonConvert.DeserializeObject<JObject>(result1);
-            Hashtable hashtable = new Hashtable();
-            foreach (JProperty col in j.Properties())
-            {
-                hashtable.Add(col.Name, col.Value);
-            }
-
-            string url = string.Format("http://" + "{0}" + "/api/Select", hashtable["runserver"].ToString());
-            MessageBox.Show(url);
+            string url = "http://192.168.3.132/api/Select";
 
             Stream result = client.OpenRead(url);
 
