@@ -187,7 +187,19 @@ namespace WindowsForms.Controllor
             client.Headers.Add("user-agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.2; .NET CLR 1.0.3705;)"); // 웹 페이지라는것을 알려줌
             client.Encoding = Encoding.UTF8;    // 한글 설정
 
-            string url = "http://192.168.3.132/api/Select";
+
+            string path = "/public/DBInfo.json";
+            StreamReader sr1 = new StreamReader(path);
+            string result1 = sr1.ReadToEnd();
+
+            JObject j = JsonConvert.DeserializeObject<JObject>(result1);
+            Hashtable hashtable = new Hashtable();
+            foreach (JProperty col in j.Properties())
+            {
+                hashtable.Add(col.Name, col.Value);
+            }
+
+            string url = string.Format("http://" + "{0}" + "/api/Select", hashtable["runserver"].ToString());
 
             Stream result = client.OpenRead(url);
 
@@ -195,7 +207,6 @@ namespace WindowsForms.Controllor
             string str = sr.ReadToEnd();
 
             ArrayList jList = JsonConvert.DeserializeObject<ArrayList>(str);
-            ArrayList list = new ArrayList();
 
             foreach (JObject row in jList)
             {
@@ -210,17 +221,17 @@ namespace WindowsForms.Controllor
 
         private void SetInsert(object o, EventArgs e)
         {
-            
+
         }
 
         private void SetUpdate(object o, EventArgs e)
         {
-           
+
         }
 
         private void SetDelete(object o, EventArgs e)
         {
-            
+
         }
 
         private void listView_click(object o, EventArgs a)
