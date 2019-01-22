@@ -14,7 +14,7 @@ using WindowsForms.Modules;
 
 namespace WindowsForms.Controllor
 {
-    class MainController
+    public class MainController
     {
         private Commons comm;
         private Panel head, contents, view, controller;
@@ -188,7 +188,7 @@ namespace WindowsForms.Controllor
             client.Encoding = Encoding.UTF8;    // 한글 설정
 
 
-            string path = "/public/DBInfo.json";
+            string path = "/public/ServerInfo.json";
             StreamReader sr1 = new StreamReader(path);
             string result1 = sr1.ReadToEnd();
 
@@ -200,6 +200,7 @@ namespace WindowsForms.Controllor
             }
 
             string url = string.Format("http://" + "{0}" + "/api/Select", hashtable["runserver"].ToString());
+            MessageBox.Show(url);
 
             Stream result = client.OpenRead(url);
 
